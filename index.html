@@ -50,23 +50,65 @@
                 </div>
                     <div class="tab-contents active-tab" id="skills">
                      <ul>
-                        <li><span>UI UX</span><br>UX Thinking & UX Engineering,UI Designing, Wireframes, UI Prototyping & Mocking  Figma</li>
-                        <li><span>Web Development</span><br>HTML5, CSS3,JavaScript,Bootstrap</li>
-                        <li><span>System Analyst</span><br>System Analysis & Design, RequirmentsEngineering, SRS,UML-Use Case Diagram, Domine Modeling Fundamentals, BPMN</li>
-                        <li><span>Software Engineer Trainee</span><br>Software Engineering Fundamentals, Software Development Lifecycle, Requirments Engineering, Software System Overview, Project Management, Project Planning & Estimation, SCM & Git Fundamentals, Tools: Trello, Google Workspace</li>
-                    <li><span>JavaScript Developer</span><br>JavaScript Fundamentals, Object Oriented Programming, Fundamental Programming, Documment Object Model </li>
-                    <li><span>Agile Practitioner</span><br> Agile Principles & Practices, Scrum, Kanban, Extreme Programming(xp)</li>
-                    </ul> 
+    <li><span>UI / UX</span><br>
+        UX Thinking & UX Engineering, UI Designing, Wireframes, UI Prototyping & Mocking, Figma
+    </li>
+
+    <li><span>Web Development</span><br>
+        HTML5, CSS3, JavaScript, TypeScript, Bootstrap, React, Angular, shadcn/ui
+    </li>
+
+    <li><span>Backend Development</span><br>
+        Python, Django, .NET Core
+    </li>
+
+    <li><span>System Analyst</span><br>
+        System Analysis & Design, Requirements Engineering, SRS, UML (Use Case Diagram), Domain Modeling Fundamentals, BPMN
+    </li>
+
+    <li><span>Software Engineer Trainee</span><br>
+        Software Engineering Fundamentals, Software Development Lifecycle, Requirements Engineering, Software System Overview, 
+        Project Management, Project Planning & Estimation, SCM & Git Fundamentals, Tools: Trello, Google Workspace
+    </li>
+
+    <li><span>JavaScript Developer</span><br>
+        JavaScript & TypeScript Fundamentals, Object-Oriented Programming, Fundamental Programming, Document Object Model (DOM)
+    </li>
+
+    <li><span>Agile Practitioner</span><br>
+        Agile Principles & Practices, Scrum, Kanban, Extreme Programming (XP)
+    </li>
+</ul>
+
+
                 </div>
                 <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2023-current</span><br> Full-stack ASP.NET core Devolper(InternShip) at Aitrich</li>
-                        <li><span>2022-2023</span><br> Electrical Engineer at Kuwait</li>
-                        <li><span>2017-2021</span> <br>Room-Technician at Qatar</li>
-                        <li><span>2014-2017</span><br> Electrician at UAE</li>
-                        <li><span>2012-2014</span><br> Service Technican at Calicut</li>
+                   <ul>
+    <li><span>2025 - Present</span><br>
+        Support Engineer (Remote) at Grey Codes, UAE
+    </li>
 
-                    </ul>
+    <li><span>2023 - 2025</span><br>
+        Full-Stack ASP.NET Core Developer (Internship) at Aitrich
+    </li>
+
+    <li><span>2022 - 2023</span><br>
+        Electrical Engineer at Kuwait
+    </li>
+
+    <li><span>2017 - 2021</span><br>
+        Room Technician at Qatar
+    </li>
+
+    <li><span>2014 - 2017</span><br>
+        Electrician at UAE
+    </li>
+
+    <li><span>2012 - 2014</span><br>
+        Service Technician at Calicut
+    </li>
+</ul>
+
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
@@ -86,7 +128,7 @@
                 <h1 class="sub-title">My Works <span class="come">(Coming soon..!)</span></h1>
                 <div class="work-list">
                    <div class="work">
-                    <img src="../rinshad.github.io/Image/undraw_On_the_office_re_cxds.png"  >
+                    <img src="Image/undraw_On_the_office_re_cxds.png"  >
 
                     <div class="layer">
                         <h3>Job Portel(Angular)</h3>
@@ -96,7 +138,7 @@
                     </div>
                    </div> 
                    <div class="work">
-                    <img src="../rinshad.github.io/Image/undraw_Interview_re_e5jn.png">    
+                    <img src="Image/undraw_Interview_re_e5jn.png">    
                     <div class="layer">
                         <h3>Job Portel(Figma)</h3>
                         <p>The app connects you with Job Seekers and Job Providers. </p>
@@ -105,7 +147,7 @@
                     </div>
                    </div>
                    <div class="work">
-                    <img src="../rinshad.github.io/Image/undraw_Startup_life_re_8ow9.png" >
+                    <img src="Image/undraw_Startup_life_re_8ow9.png" >
                     <div class="layer">
                         <h3>Job Portel(ASP.NET Core)</h3>
                         <p>The app connects you with Job Seekers and Job Providers. </p>
@@ -173,22 +215,35 @@
     <!----------------------------------form----------------------->
 
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwMk5avDqb4V8neNoZPv7Gy31IqjtVYNqzq4wzzwZ_KGUA07x7cSM0gWoQuHLxnlVsR/exec'
-    const form = document.forms['submit-to-google-sheet']
-  const msg=document.getElementById("msg")
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyFxg5o5M_oPOFDZvOIeniFAbQXWILYiOcHnux7cpscuoHq_ZyiLAVpRMOswm4BkLbn/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
 
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML="Message sent succesfully"
-            setTimeout(function(){
-                msg.innerHTML=""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        // Success popup message
+        msg.innerHTML = "✅ Message sent successfully!"
+        msg.style.color = "#00c851"
+        msg.style.fontWeight = "600"
+        msg.style.transition = "all 0.5s ease"
+
+        // Hide message after 5 seconds
+        setTimeout(() => {
+          msg.innerHTML = ""
+        }, 5000)
+
+        // Reset the form
+        form.reset()
+      })
+      .catch(error => {
+        console.error('Error!', error.message)
+        msg.innerHTML = "❌ Failed to send. Please try again later."
+        msg.style.color = "#ff4444"
+      })
+  })
+</script>
 </body>
 </html>
